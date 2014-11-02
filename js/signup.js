@@ -27,9 +27,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	document.getElementById('cancelButton').onclick = function() {
 		if (window.confirm('You have not finished filling out the form. Are you sure you want to leave?')) {
-			window.location.href = 'http://www.google.com';
+			window.location = 'http://www.google.com';
 		}	
 	};	
+
+	document.addEventListener('submit', function(evt) {
+			evt.preventDefault();
+
+		alert(evt);
+
+		
+	}); 
+
+	//firstName, lastName, address1, city, state, zip, birthdate
 });
-
-
