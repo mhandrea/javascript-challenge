@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
+.invalid {
+	border-color: #FF0000;
+    border-width: 1px;
+    border-style: solid;
+}
+
 body {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
